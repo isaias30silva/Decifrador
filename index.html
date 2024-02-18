@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/imagens/favicon.png">
+    <title>Decodificador</title>
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <img src="./assets/imagens/logoAlura.PNG.png" alt="Logotipo da alura">
+        </header>
+        <main>
+            <textarea type="text" placeholder="Digite o texto aqui"></textarea>
+            <p class="info">
+                <img src="./assets/imagens/info.png" alt="informacoes"> Apenas letras minúsculas, sem acentos e sem espaço.
+            </p>
+            <div class="acoes">
+                <button 
+                    type="button" 
+                    onclick="criptografar()" 
+                    
+                    class="button desabilitado" 
+                    id="botaoCripto" 
+                    disabled>
+                    Criptografar
+                </button>
+                <button
+                onclick="descriptografar()"
+                type="button"
+                class="button desabilitado"
+                id="botaoDescripto"
+                disabled
+                >
+                Descriptografar
+                </button>
+            </div>
+        </main>
+    </div>
+    <aside>
+        <img src="./assets/imagens/boneco.png.png" alt="imagem de busca"/>
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        <span id="resultado"></span>
+    <div>
+        <button
+        id="copiar"
+        onclick="copiar()"
+        type="button"
+        class="button copiar"
+        >
+        Copiar
+        </button>
+    </div>
+    </aside>
+    <footer class="footer">
+        <p class="criador">Desenvolvido por: @isaias30silva
+            <a href="https://github.com/isaias30silva" target="_blank">
+                <img class="links" src="./assets/imagens/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/isaias-menezes-silva/" target="_blank">
+                <img class="links" src="./assets/imagens/linkedin.png" />
+            </a>
+        </p>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
